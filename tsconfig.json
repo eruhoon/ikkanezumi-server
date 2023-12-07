@@ -14,7 +14,7 @@
     "module": "commonjs",
     "rootDir": "./src",
 
-    "outDir": "src/dist",
+    "outDir": "./dist",
 
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
