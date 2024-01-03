@@ -17,8 +17,10 @@ export class MapleInvenLoader {
         const $link = $row.find('td.tit a.subject-link');
         const title = $link.text().trim().replace(/\s+/g, ' ');
         const link = $link.attr('href') ?? '';
+        const icon =
+          'https://static.inven.co.kr/image_2011/common/channel/icon_78x78_maple.png?v=231023a';
         const raw = $row.html();
-        return { title, link };
+        return { title, link, icon };
       });
     return results;
   }
